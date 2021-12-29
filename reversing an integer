@@ -1,0 +1,22 @@
+//This code deals with the method of reversing an integer
+import java.util.*
+public Reverse{
+      int reverse(int d)
+      {
+          int s=0;
+          while(d!=0)
+          {
+            int t=d%10;
+            s=(s*10)=t;
+            d=d/10;
+           }
+           return s;
+       }
+public static void main(String [] args)
+{
+      Scanner s=new Scanner(System.in);
+      int d=s.nextInt();
+      int a=reverse(d);
+      System.out.println(a);
+   }
+ }  
